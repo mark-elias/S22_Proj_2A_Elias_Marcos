@@ -97,10 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d8d7c3040157248933c1ae78913cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalIncrement: 7
-  speed: 20
-  maxHeight: 7
-  minHeight: -7
+  verticalIncrement: 5
+  speed: 50
+  maxHeight: 5
+  minHeight: -5
   health: 3
 --- !u!61 &3336117194194963749
 BoxCollider2D:
