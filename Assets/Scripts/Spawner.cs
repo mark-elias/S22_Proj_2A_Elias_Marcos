@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
 
-    public GameObject asteroid;
+    public GameObject[] asteroidPatterns;
 
     private float timeBetweenSpawn;
 
@@ -20,7 +20,9 @@ public class Spawner : MonoBehaviour
     {
         if (timeBetweenSpawn <= 0)
         {
-            Instantiate(asteroid, transform.position, Quaternion.identity);
+
+            int rand = Random.Range(0, asteroidPatterns.Length);
+            Instantiate(asteroidPatterns[rand], transform.position, Quaternion.identity);
             timeBetweenSpawn = startTimeBetweenSpawn;
 
             if (startTimeBetweenSpawn > minTime)

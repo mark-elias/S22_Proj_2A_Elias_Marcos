@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3336117194194963746}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,10 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d8d7c3040157248933c1ae78913cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalIncrement: 5
-  speed: 50
-  maxHeight: 5
-  minHeight: -5
+  verticalIncrement: 20
+  speed: 25
+  maxHeight: 20
+  minHeight: -20
   health: 3
 --- !u!61 &3336117194194963749
 BoxCollider2D:
