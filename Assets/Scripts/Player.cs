@@ -16,7 +16,11 @@ public class Player : MonoBehaviour
     public float maxHeight;
     public float minHeight;
 
-    public int health = 3;
+    // player health
+
+    public int health;
+
+    public GameObject displayHealth;
 
     //sprite array
 
@@ -55,6 +59,8 @@ public class Player : MonoBehaviour
     }
     private void PlayerHasDied()
     {
+
+        PersistentManagerScript.Instance.playerHealth = 3;
         //this.gameObject.GetComponent<SpriteRenderer>().sprite = Player_Dead;
         SceneManager.LoadScene("Game Over");
 
@@ -77,6 +83,24 @@ public class Player : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = purpleRocket;
         }
+
+        // choosing difficulty
+
+        if (PersistentManagerScript.Instance.playerHealth == 1)
+        {
+            health = 1;
+        }
+        else if (PersistentManagerScript.Instance.playerHealth == 3)
+        {
+            health = 3;
+        }
+        else
+        {
+            health = 5;
+        }
+
+    
+
     }
     private void Update()
     {

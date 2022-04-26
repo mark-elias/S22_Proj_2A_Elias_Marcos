@@ -17,9 +17,15 @@ public class PersistentManagerScript : MonoBehaviour
 
     //public Sprite player; 
 
+    // ------------------------
+
+    public int playerHealth;
+
     public string rocketName;
 
     public string rocketColor;
+
+    // --------------------------------
 
 
     private void Awake()
