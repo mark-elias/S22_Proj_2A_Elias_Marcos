@@ -17,7 +17,8 @@ public class PersistentManagerScript : MonoBehaviour
 
     //public Sprite player; 
 
-    public InputField rocketName;
+    public string rocketName;
+
     public string rocketColor;
 
 

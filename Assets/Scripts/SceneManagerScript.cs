@@ -8,16 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
 {
-    // staticv variable
-
-    //public Text valueText; 
-
-    public Text rocketName;
-
-
-    //public Button PlayGameButton;
-
-    //
 
     private void Start()
     {
@@ -43,7 +33,7 @@ public class SceneManagerScript : MonoBehaviour
         Debug.Log("GoToPlayScene");
         SceneManager.LoadScene("Play Scene");
 
-        // updating the STATic variable
+           // updating the STATic variable
         //PersistentManagerScript.Instance.Value++;
     }
 
@@ -55,6 +45,9 @@ public class SceneManagerScript : MonoBehaviour
 
     }
 
+    // ----------- when Rocket Color buttons are selected, 
+    // store the color (string) into the Persistent Manager
+    // and then change the Sprite in the Player Script
     public void BlueButtonClicked()
     {
         PersistentManagerScript.Instance.rocketColor = "Blue";
@@ -67,5 +60,6 @@ public class SceneManagerScript : MonoBehaviour
     {
         PersistentManagerScript.Instance.rocketColor = "Purple";
     }
+
 
 }
