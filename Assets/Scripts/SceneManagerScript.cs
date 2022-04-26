@@ -8,8 +8,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
 {
+    // staticv variable
 
-    public Text valueText; 
+    //public Text valueText; 
+
+    public Text rocketName;
 
 
     //public Button PlayGameButton;
@@ -18,7 +21,11 @@ public class SceneManagerScript : MonoBehaviour
 
     private void Start()
     {
-       // valueText.text = PersistentManagerScript.Instance.Value.ToString();
+        // valueText.text = PersistentManagerScript.Instance.Value.ToString();
+
+        //rocketName.text = PersistentManagerScript.Instance.rocketName.ToString();
+
+        //SceneManager.LoadScene("Main Scene");
     }
 
     public void GoToMainScene()
@@ -46,6 +53,19 @@ public class SceneManagerScript : MonoBehaviour
 
         SceneManager.LoadScene("Game Over");
 
+    }
+
+    public void BlueButtonClicked()
+    {
+        PersistentManagerScript.Instance.rocketColor = "Blue";
+    }
+    public void GreenButtonClicked()
+    {
+        PersistentManagerScript.Instance.rocketColor = "Green";
+    }
+    public void PurpleButtonClicked()
+    {
+        PersistentManagerScript.Instance.rocketColor = "Purple";
     }
 
 }

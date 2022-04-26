@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2765690485491239472}
   - component: {fileID: 2765690485491239477}
   - component: {fileID: 2765690485491239478}
+  - component: {fileID: 2413953793171841143}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -115,6 +116,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 30
+--- !u!95 &2413953793171841143
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765690485491239473}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87d3217cf854a7a4c9510b1b0b6e014c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8749441657958817849
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,8 +161,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8749441657958817849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.8929598, y: 3.8929598, z: 4}
+  m_LocalPosition: {x: 3.79, y: 0, z: 0}
+  m_LocalScale: {x: 2.1143055, y: 2.1143055, z: 4}
   m_Children: []
   m_Father: {fileID: 2765690485491239479}
   m_RootOrder: 0
@@ -155,7 +175,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8749441657958817849}
   serializedVersion: 7
-  lengthInSec: 3
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -230,7 +250,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -283,7 +303,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 20
       minScalar: 5
       maxCurve:
         serializedVersion: 2

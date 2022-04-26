@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class PersistentManagerScript : MonoBehaviour
 {
 
@@ -11,9 +13,12 @@ public class PersistentManagerScript : MonoBehaviour
     // value that we want to keep throught all scenes
     // static variable
 
-   // public int Value;
+    // public int Value;
 
     //public Sprite player; 
+
+    public InputField rocketName;
+    public string rocketColor;
 
 
     private void Awake()

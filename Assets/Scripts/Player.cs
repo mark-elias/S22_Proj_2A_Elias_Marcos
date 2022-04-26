@@ -20,8 +20,14 @@ public class Player : MonoBehaviour
 
     //sprite array
 
-   // public Sprite[] spriteArray;
+    // public Sprite[] spriteArray;
 
+
+    // changing sprite
+
+    public Sprite blueRocket;
+    public Sprite greenRocket;
+    public Sprite purpleRocket;
     // changing Sprite when player dies
     public Sprite Player_Dead;
 
@@ -29,21 +35,24 @@ public class Player : MonoBehaviour
     //public Animator canAim;
 
 
-   // private void PlayerAnimation()
-  //  {
+    // private void PlayerAnimation()
+    //  {
 
-  //      Debug.Log("Player animation called");
-  //      int i = 0;
-   //     this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteArray[i];
-   //     i++;
-        //if (i == 3)
-        //{
-        //    Debug.Log("array reset");
-        //    i = 0;
-       // }
+    //      Debug.Log("Player animation called");
+    //      int i = 0;
+    //     this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteArray[i];
+    //     i++;
+    //if (i == 3)
+    //{
+    //    Debug.Log("array reset");
+    //    i = 0;
+    // }
 
     //}
-
+    public void PlayerWantsBlueRocket()
+    {
+       // this.gameObject.GetComponent<SpriteRenderer>().sprite = Art_Rocket_Blue_4;
+    }
     private void PlayerHasDied()
     {
         //this.gameObject.GetComponent<SpriteRenderer>().sprite = Player_Dead;
@@ -52,6 +61,22 @@ public class Player : MonoBehaviour
 
 
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void Start()
+    {
+       if (PersistentManagerScript.Instance.rocketColor == "Blue")
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = blueRocket;
+        }
+       else if (PersistentManagerScript.Instance.rocketColor == "Green")
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = greenRocket;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = purpleRocket;
+        }
     }
     private void Update()
     {
@@ -86,5 +111,7 @@ public class Player : MonoBehaviour
         {
             targetPositon = new Vector2(transform.position.x, transform.position.y - verticalIncrement);
         }
+
+     
     }
 }
