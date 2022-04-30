@@ -35,32 +35,22 @@ public class Player : MonoBehaviour
     // changing Sprite when player dies
     public Sprite Player_Dead;
 
-    // effects
-    //public Animator canAim;
+    // audio
 
+    public AudioSource source;
 
-    // private void PlayerAnimation()
-    //  {
+    public AudioClip clip;
 
-    //      Debug.Log("Player animation called");
-    //      int i = 0;
-    //     this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteArray[i];
-    //     i++;
-    //if (i == 3)
-    //{
-    //    Debug.Log("array reset");
-    //    i = 0;
-    // }
+    public AudioSource source_2;
 
-    //}
+    public AudioClip clip_rocketMovingSound;
     public void PlayerWantsBlueRocket()
     {
        // this.gameObject.GetComponent<SpriteRenderer>().sprite = Art_Rocket_Blue_4;
     }
     private void PlayerHasDied()
     {
-
-        PersistentManagerScript.Instance.playerHealth = 3;
+        //PersistentManagerScript.Instance.playerHealth = 0;
         //this.gameObject.GetComponent<SpriteRenderer>().sprite = Player_Dead;
         SceneManager.LoadScene("Game Over");
 
@@ -115,13 +105,13 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Player has died");
 
-            //health = 3;
-            //PlayerHasDied();
-           this.gameObject.GetComponent<SpriteRenderer>().sprite = Player_Dead;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Player_Dead;
 
+            //SoundManagerScript.playExplosionSound();
 
-            Invoke("PlayerHasDied", 1);
+            source.PlayOneShot(clip);
+
+            Invoke("PlayerHasDied", 3);
             //PlayerHasDied();
         }
 
@@ -130,6 +120,10 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight && Time.time > nextPress)
         {
+
+            //play sound effect
+            source_2.PlayOneShot(clip_rocketMovingSound);
+
             nextPress = Time.time + pressRate;
             //camAnim.SetTrigger("shake");
             targetPositon = new Vector2(transform.position.x, transform.position.y + verticalIncrement);
@@ -138,6 +132,9 @@ public class Player : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight  && Time.time > nextPress)
         {
+
+            // play sound effect
+            source_2.PlayOneShot(clip_rocketMovingSound);
 
             nextPress = Time.time + pressRate;
 

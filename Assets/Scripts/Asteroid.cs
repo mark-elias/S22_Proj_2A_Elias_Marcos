@@ -31,7 +31,8 @@ public class Asteroid : MonoBehaviour
 
             Debug.Log(other.GetComponent<Player>().health);
 
-           
+            //SoundManagerScript.playExplosionSound();
+
 
             Destroy(gameObject);
 

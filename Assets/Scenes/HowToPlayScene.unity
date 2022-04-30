@@ -735,7 +735,8 @@ MonoBehaviour:
   m_Text: Use the Up & Down arrow keys to move your player and avoid hitting the
     various asteroids in your way. If you selected Easy, you will have 5 lives. If
     you selected Medium, you will have 3 lives. If you selected Hard, you will have
-    1 life. Each time you hit an asterioid, 1 life point is taken away.
+    1 life. Each time you hit an asterioid, 1 life point is taken away. Your Rockt
+    explodes and the game is over when you have 0 life points
 --- !u!222 &1113735638
 CanvasRenderer:
   m_ObjectHideFlags: 0

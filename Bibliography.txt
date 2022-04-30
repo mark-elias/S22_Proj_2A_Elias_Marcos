@@ -1,0 +1,14 @@
+All of the art/sprites for this game I made myself with Adobe Fresco. I made the rockets, background, and asteroid using Adobe Fresco
+
+The song in the background I downloaed from a website called Uppbeat. Here is the credit for the song:
+Music from Uppbeat (free for Creators!):
+https://uppbeat.io/t/simon-folwar/neon-signs
+License code: L8B45JPENU6SYF4V
+
+The audio clips for the death explosion and Rocket sound, I dowloaded from edidemicsound.com
+
+I watched videos on Youtube to learn how to make this game. The channels I watched were:
+Imphenzia
+Reso Coder
+Blackthornprod
+ 
