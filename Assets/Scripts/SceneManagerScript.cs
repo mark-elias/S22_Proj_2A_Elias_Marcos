@@ -125,6 +125,13 @@ public class SceneManagerScript : MonoBehaviour
         PersistentManagerScript.Instance.playerHealth = 1;
     }
 
+    // quit application
+    public void QuitApplication()
+    {
+        Application.Quit();
+
+        Debug.Log("Quit Application called");
+    }
 
 
 }
