@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Splash Scene.unity
+    guid: a360a559db1f6cc49bd549b22715a588
   - enabled: 1
     path: Assets/Scenes/Main Scene.unity
     guid: 691df284ec483494bbc5e461ac666c70
@@ -17,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 27d46166f83e882478aa566d7b1b99a5
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: c0240030557f97e4bb1547ad90bbcb58
+  - enabled: 1
+    path: Assets/Scenes/HowToPlayScene.unity
+    guid: 7fcdafe92657f294da5145f5697867f1
   m_configObjects: {}

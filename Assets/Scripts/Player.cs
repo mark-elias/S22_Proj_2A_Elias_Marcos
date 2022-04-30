@@ -102,10 +102,14 @@ public class Player : MonoBehaviour
     
 
     }
+
+
+    float pressRate = 0.8f;
+    float nextPress = 0.0f;
     private void Update()
     {
 
-        
+       
 
         if (health <= 0)
         {
@@ -124,15 +128,19 @@ public class Player : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, targetPositon, speed * Time.deltaTime);
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight && Time.time > nextPress)
         {
+            nextPress = Time.time + pressRate;
             //camAnim.SetTrigger("shake");
             targetPositon = new Vector2(transform.position.x, transform.position.y + verticalIncrement);
 
         }
 
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight  && Time.time > nextPress)
         {
+
+            nextPress = Time.time + pressRate;
+
             targetPositon = new Vector2(transform.position.x, transform.position.y - verticalIncrement);
         }
 

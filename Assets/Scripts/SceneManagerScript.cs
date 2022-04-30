@@ -65,6 +65,22 @@ public class SceneManagerScript : MonoBehaviour
 
     }
 
+    public void GoToHowToPlayScene()
+    {
+        Debug.Log("How to Play scene called");
+
+        SceneManager.LoadScene("HowToPlayScene");
+
+    }
+
+    public void GoToCreditsScene()
+    {
+        Debug.Log("Credits scene called");
+
+        SceneManager.LoadScene("CreditsScene");
+
+    }
+
     // ----------- when Rocket Color buttons are selected, 
     // store the color (string) into the Persistent Manager
     // and then change the Sprite in the Player Script

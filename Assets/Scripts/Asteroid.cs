@@ -27,7 +27,11 @@ public class Asteroid : MonoBehaviour
 
             other.GetComponent<Player>().health -= damage;
 
+            
+
             Debug.Log(other.GetComponent<Player>().health);
+
+           
 
             Destroy(gameObject);
 
