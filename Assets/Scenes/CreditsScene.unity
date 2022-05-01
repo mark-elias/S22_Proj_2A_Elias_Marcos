@@ -585,7 +585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -215}
+  m_AnchoredPosition: {x: 0, y: -115}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111320544
@@ -657,15 +657,15 @@ RectTransform:
   m_GameObject: {fileID: 1311716772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10292866, y: 0.10292866, z: 0.10292866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2031480278}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -925, y: 118}
-  m_SizeDelta: {x: 160, y: 70}
+  m_AnchoredPosition: {x: 27.6332, y: -76.7215}
+  m_SizeDelta: {x: 1864.7336, y: 805.9758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1311716774
 MonoBehaviour:
@@ -689,24 +689,37 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 300
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "All of the art/sprites for this game I made myself with Adobe Fresco.
-    I made the rockets, background, and asteroid using Adobe Fresco\n\nThe song in
-    the background I downloaed from a website called Uppbeat. Here is the credit
-    for the song:\nMusic from Uppbeat (free for Creators!):\r\nhttps://uppbeat.io/t/simon-folwar/neon-signs\r\nLicense
-    code: L8B45JPENU6SYF4V\n\nThe audio clips for the death explosion and Rocket
-    sound, I dowloaded from edidemicsound.com\n\nI watched videos on Youtube to learn
-    how to make this game. The channels I watched were:\nImphenzia\nReso Coder\nBlackthornprod\nBrackeys\n "
+    I made the rockets, background, and asteroid using Adobe Fresco\r\n\r\nThe song
+    in the background I downloaed from a website called Uppbeat. Here is the credit
+    for the song:\r\nMusic from Uppbeat (free for Creators!):\r\nhttps://uppbeat.io/t/simon-folwar/neon-signs\r\nLicense
+    code: L8B45JPENU6SYF4V\r\n\r\nThe audio clips for the death explosion and Rocket
+    sound, I dowloaded from edidemicsound.com\r\n\r\nI watched videos on Youtube
+    to learn how to make this game. The channels I watched were:\r\nImphenzia\r\nReso
+    Coder\r\nBlackthornprod\r\nBrackeys\r\n\r\nFolwar, S. (n.d.). Free music for
+    creators. Free Music For YouTube Videos & Creators \u2022 Uppbeat. Retrieved
+    April 30, 2022, from https://uppbeat.io/track/simon-folwar/neon-signs \r\n\nPlaylists:
+    Epidemic sound. Premium Music for Content Creators. (n.d.). Retrieved May 1,
+    2022, from https://www.epidemicsound.com/my-music/playlists/11174847/ \r\n\nBrackeys.
+    (2017, April 12). How to build / export your game in unity (windows: Mac: Webgl).
+    YouTube. Retrieved May 1, 2022, from https://youtu.be/7nxKAtxGSn8 \r\n\nBlackthornprod.
+    (2018, July 26). How to make a simple game in unity - endless runner - #1. YouTube.
+    Retrieved May 1, 2022, from https://youtu.be/5M7vX_z6B9I \r\n\nReso Coder. (2017,
+    March 24). Singletons in unity - simple tutorial for Beginners. YouTube. Retrieved
+    May 1, 2022, from https://youtu.be/CPKAgyp8cno \r\n\nImphenzia. (2020, July 24).
+    Learn unity - the most basic tutorial I'll ever make. YouTube. Retrieved May
+    1, 2022, from https://youtu.be/pwZpJzpE2lQ \r\n"
 --- !u!222 &1311716775
 CanvasRenderer:
   m_ObjectHideFlags: 0
